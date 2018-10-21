@@ -19,14 +19,13 @@ The script is done downloading the entire category when it stops downloading new
 11. https://nekos.life/api/v2/img/smug
 12. https://nekos.life/api/v2/img/lizard
 13. https://nekos.life/api/v2/img/feed
-14. https://nekos.life/api/v2/img/cat
+14. https://nekos.life/api/v2/img/wallpaper
 15. https://nekos.life/api/v2/img/avatar
 16. https://nekos.life/api/v2/img/holo
 17. https://nekos.life/api/v2/img/baka
 18. https://nekos.life/api/v2/img/kiss
 19. https://nekos.life/api/v2/img/gecg
 20. https://nekos.life/api/v2/img/slap
-19. https://nekos.life/api/v2/img/wallpaper
 
 NSFW(18+) URLs are in the `nsfw.txt`
 
