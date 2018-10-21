@@ -13,7 +13,7 @@ To change the Content it is supposed to download you need to replace the `api_ur
 6. https://nekos.life/api/v2/img/waifu
 7. https://nekos.life/api/v2/img/tickle
 8. https://nekos.life/api/v2/img/classic
-9. https://nekos.life/api/v2/img/slap
+9. https://nekos.life/api/v2/img/kemonomimi
 10. https://nekos.life/api/v2/img/poke
 11. https://nekos.life/api/v2/img/smug
 12. https://nekos.life/api/v2/img/lizard
@@ -24,6 +24,7 @@ To change the Content it is supposed to download you need to replace the `api_ur
 17. https://nekos.life/api/v2/img/baka
 18. https://nekos.life/api/v2/img/kiss
 19. https://nekos.life/api/v2/img/gecg
+20. https://nekos.life/api/v2/img/slap
 
 NSFW(18+) URLs are in the `nsfw.txt`
 
