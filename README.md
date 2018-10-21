@@ -27,7 +27,7 @@ The script is done downloading the entire category when it stops downloading new
 19. https://nekos.life/api/v2/img/gecg
 20. https://nekos.life/api/v2/img/slap
 
-NSFW(18+) URLs are in the `nsfw.txt`
+NSFW(18+) URLs are in the `nsfw` file
 
 ## Dependencies:
 requests
