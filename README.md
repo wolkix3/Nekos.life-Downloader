@@ -30,5 +30,9 @@ The script is done downloading the entire category when it stops downloading new
 
 NSFW(18+) URLs are in the `nsfw.txt`
 
+## Dependencies:
+requests
+shutil
+
 ## Warning
 This script downloads the Pictures pretty fast (depending on your internet speed) and if you put it on your Desktop it might fully bloat it.
