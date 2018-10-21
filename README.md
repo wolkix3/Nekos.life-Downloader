@@ -1,7 +1,7 @@
 # Nekos.life-Downloader
 A script to download pictures from the site Nekos.life
 
-To change the Content it is supposed to download you need to replace the `api_url` variable to the wanted URL. The default is for nekos.
+To change the Content it is supposed to download you need to replace the `api_url` variable to the wanted URL in the `script.py`. The default is for nekos.
 
 ## Available URLs:
 
