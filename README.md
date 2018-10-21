@@ -6,7 +6,7 @@ To change the Content it is supposed to download you need to replace the `api_ur
 ## Available URLs:
 
 1. https://nekos.life/api/v2/img/neko
-2. https://nekos.life/api/v2/img/ngif
+2. https://nekos.life/api/v2/img/ngif   
 3. https://nekos.life/api/v2/img/pat
 4. https://nekos.life/api/v2/img/hug
 5. https://nekos.life/api/v2/img/fox_girl
