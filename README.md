@@ -32,6 +32,7 @@ NSFW(18+) URLs are in the `nsfw.txt`
 
 ## Dependencies:
 requests
+
 shutil
 
 ## Warning
