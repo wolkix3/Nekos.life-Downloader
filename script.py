@@ -27,7 +27,7 @@ def neko():
         exists = os.path.exists(filename)
 
         if not exists:
-            grab = requests.get(image_url, stream=True)
+            grab = requests.get(url, stream=True)
             if grab.status_code == 200:
                 with open(filename, "wb") as f:
                     grab.raw.decode_content = True
