@@ -22,9 +22,7 @@ def neko():
 
         x = json.loads(output, object_hook=lambda d: namedtuple('X', d.keys())(*d.values()))
 
-        image_url = x.url
-
-        url = image_url
+        url = x.url
         filename = url[url.rfind("/")+1:]
         exists = os.path.exists(filename)
 
