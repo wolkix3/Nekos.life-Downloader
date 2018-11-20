@@ -1,5 +1,4 @@
 import requests
-import urllib
 import json
 from collections import namedtuple
 import shutil
