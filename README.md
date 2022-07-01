@@ -1,7 +1,5 @@
 # Nekos.life-Downloader
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f762a7ac35754d7da87412af9a610102)](https://app.codacy.com/app/wolkix3/Nekos.life-Downloader?utm_source=github.com&utm_medium=referral&utm_content=wolkix3/Nekos.life-Downloader&utm_campaign=Badge_Grade_Dashboard)
-
 A script to download images from the site Nekos.life
 
 To change the Content it is supposed to download you need to replace the `api_url` variable to the wanted URL in the `script.py`. The default is for nekos.
