@@ -1,7 +1,7 @@
 
 # Nekos.life Downloader   [![Badge License]][License]
 
-*A script to downloads images from the `Nekos.life` page.*
+*A script to downloads images from `Nekos.life`.*
 
 <br>
 
@@ -44,6 +44,8 @@ you selected.
 *This script downloads the images quite fast* <br>
 *- depending on your internet speed - and if* <br>
 *you put it on your desktop it might fill it up.*
+
+<br>
 
 
 <!----------------------------------------------------------------------------->
