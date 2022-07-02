@@ -1,38 +1,50 @@
-import requests
-import json
 from collections import namedtuple
-import shutil
 from threading import Thread
-import os
+
 import multiprocessing
+import requests
+import shutil
+import json
+import os
+
 
 #---------------------------------------------
 #Enter the API URL here:
 api_url = "https://nekos.life/api/v2/img/neko"
 #---------------------------------------------
 
+
+def download(url,path):
+    
+    response = requests.get(url,stream = True)
+    
+    if response.status_code == 200:
+        with open(path,"wb") as file:
+            response.raw.decode_content = True
+            shutil.copyfileobj(response.raw,file)
+    
+    print("Sucessfully downloaded " + path)
+    
+
 def neko():
     while True:
-        filename = ""
-        with requests.Session() as s:
-            api_output = s.get(api_url)
+        
+        path = ""
+        
+        with requests.Session() as session:
+            response = session.get(api_url)
 
-        output = api_output.text
+        output = response.text
 
-        x = json.loads(output, object_hook=lambda d: namedtuple('X', d.keys())(*d.values()))
+        info = json.loads(output,
+            object_hook = lambda d : namedtuple('X',d.keys())(*d.values()))
 
-        url = x.url
-        filename = url[url.rfind("/")+1:]
-        exists = os.path.exists(filename)
+        url = info.url
+        path = url[url.rfind("/") + 1:]
 
-        if not exists:
-            grab = requests.get(url, stream=True)
-            if grab.status_code == 200:
-                with open(filename, "wb") as f:
-                    grab.raw.decode_content = True
-                    shutil.copyfileobj(grab.raw, f)
-            print("Sucessfully downloaded " + filename)
+        if not os.path.exists(path):
+            download(url,path);
 
 for i in range(multiprocessing.cpu_count()):
-    t = Thread(target=neko)
-    t.start()
+    thread = Thread(target = neko)
+    thread.start()
