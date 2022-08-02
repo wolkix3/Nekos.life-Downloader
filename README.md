@@ -1,39 +1,70 @@
-# Nekos.life-Downloader
 
-A script to download images from the site Nekos.life
+# Nekos.life Downloader   [![Badge License]][License]
 
-To change the Content it is supposed to download you need to replace the `api_url` variable to the wanted URL in the `script.py`. The default is for nekos.
-The script is done downloading the entire category when it stops downloading new files.
+*A script to downloads images from `Nekos.life`.*
 
-## Available URLs:
+<br>
 
-1. https://nekos.life/api/v2/img/neko
-2. https://nekos.life/api/v2/img/ngif   
-3. https://nekos.life/api/v2/img/pat
-4. https://nekos.life/api/v2/img/hug
-5. https://nekos.life/api/v2/img/fox_girl
-6. https://nekos.life/api/v2/img/waifu
-7. https://nekos.life/api/v2/img/tickle
-8. https://nekos.life/api/v2/img/classic
-9. https://nekos.life/api/v2/img/kemonomimi
-10. https://nekos.life/api/v2/img/poke
-11. https://nekos.life/api/v2/img/smug
-12. https://nekos.life/api/v2/img/lizard
-13. https://nekos.life/api/v2/img/feed
-14. https://nekos.life/api/v2/img/wallpaper
-15. https://nekos.life/api/v2/img/avatar
-16. https://nekos.life/api/v2/img/holo
-17. https://nekos.life/api/v2/img/baka
-18. https://nekos.life/api/v2/img/kiss
-19. https://nekos.life/api/v2/img/gecg
-20. https://nekos.life/api/v2/img/slap
+## Usage
 
-NSFW(18+) URLs are in the `nsfw` file
+To change what is downloaded, adjust the <br>
+`api_url` variable in [`Download.py`] to one <br>
+of the available endpoints.
 
-## Dependencies:
-requests
+*The default URL downloads nekos.*
 
-shutil
+One the script stops downloading files, it <br>
+will have downloaded the entire category <br>
+you selected.
+
+<br>
+<br>
+
+## Endpoints
+
+*Available URLs you can download from.*
+
+[![Button SFW]][SFW]   
+[![Button NSFW]][NSFW]
+
+<br>
+<br>
+
+## Dependencies
+
+- **[`requests`]**
+
+- **[`shUtil`]**
+
+<br>
+<br>
 
 ## Warning
-This script downloads the Pictures pretty fast (depending on your internet speed) and if you put it on your Desktop it might fully bloat it.
+
+*This script downloads the images quite fast* <br>
+*- depending on your internet speed - and if* <br>
+*you put it on your desktop it might fill it up.*
+
+<br>
+
+
+<!----------------------------------------------------------------------------->
+
+[`requests`]: https://pypi.org/project/requests/
+[`shutil`]: https://docs.python.org/3/library/shutil.html
+
+
+[`Download.py`]: Source/Download.py
+[License]: LICENSE
+[NSFW]: Data/NSFW.txt
+[SFW]: Data/SFW.txt
+
+<!---------------------------------[ Badges ]---------------------------------->
+
+[Badge License]: https://img.shields.io/badge/License-GPL3-015d93.svg?style=for-the-badge&labelColor=blue
+
+
+<!--------------------------------[ Buttons ]---------------------------------->
+
+[Button NSFW]: https://img.shields.io/badge/NSFW-EF2D5E?style=for-the-badge&logoColor=white&logo=Adafruit
+[Button SFW]: https://img.shields.io/badge/SFW-0099E5?style=for-the-badge&logoColor=white&logo=AerLingus
